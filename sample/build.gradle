@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion Versions.compileSdk
+    defaultConfig {
+        applicationId "com.ivianuu.rxandroid.sample"
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        versionCode Versions.versionCode
+        versionName Versions.versionName
+    }
+}
+
+dependencies {
+    // Android Support
+    implementation Deps.supportAppCompat
+
+    // Kotlin
+    implementation Deps.kotlinStdLib
+
+    // RxContentObserver
+  //  implementation project(':rxcontentobserver')
+}
