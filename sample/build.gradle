@@ -12,12 +12,6 @@ android {
 }
 
 dependencies {
-    // Android Support
-    implementation Deps.supportAppCompat
-
-    // Kotlin
+    implementation Deps.androidxAppCompat
     implementation Deps.kotlinStdLib
-
-    // RxContentObserver
-  //  implementation project(':rxcontentobserver')
 }

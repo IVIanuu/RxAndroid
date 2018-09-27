@@ -2,7 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.ivianuu'
+group=Versions.groupId
+version=Versions.versionName
 
 android {
     compileSdkVersion Versions.compileSdk
@@ -14,13 +15,9 @@ android {
 }
 
 dependencies {
-    // Kotlin
+    api Deps.androidxAppCompat
     api Deps.kotlinStdLib
-
-    // RxJava
     api Deps.rxJava
-
-    api Deps.supportAppCompat
 }
 
 // build a jar with source files
@@ -45,4 +42,12 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 artifacts {
     archives sourcesJar
     archives javadocJar
+}
+
+install {
+    repositories.mavenInstaller {
+        pom.groupId = Versions.groupId
+        pom.version = Versions.versionName
+        pom.artifactId = project.name
+    }
 }

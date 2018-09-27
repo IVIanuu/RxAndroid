@@ -16,10 +16,10 @@
 
 package com.ivianuu.rxandroid
 
-import android.support.v7.widget.PopupMenu
 import android.view.Gravity
 import android.view.MenuItem
 import android.view.View
+import androidx.appcompat.widget.PopupMenu
 import io.reactivex.Maybe
 
 /**

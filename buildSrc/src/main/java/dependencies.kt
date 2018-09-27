@@ -6,24 +6,25 @@ object Versions {
     const val minSdk = 17
     const val targetSdk = 28
     const val versionCode = 1
-    const val versionName = "1.0"
+    const val versionName = "SNAPSHOT"
+    const val groupId = "com.ivianuu.rxandroid"
 
-    const val androidGradlePlugin = "3.1.4"
-    const val kotlin = "1.2.51"
+    const val androidGradlePlugin = "3.2.0"
+    const val androidx = "1.0.0"
+    const val kotlin = "1.3.0-rc-57"
     const val mavenGradlePlugin = "2.1"
-    const val rxJava = "2.1.16"
-    const val support = "28.0.0-alpha3"
+    const val rxJava = "2.2.2"
 }
 
 object Deps {
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.androidGradlePlugin}"
 
+    const val androidxAppCompat = "androidx.appcompat:appcompat:${Versions.androidx}"
+
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
-    const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jre7:${Versions.kotlin}"
+    const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
 
     const val mavenGradlePlugin = "com.github.dcendents:android-maven-gradle-plugin:${Versions.mavenGradlePlugin}"
-
-    const val supportAppCompat = "com.android.support:appcompat-v7:${Versions.support}"
 
     const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
 }
