@@ -19,7 +19,7 @@ dependencies {
     api Deps.rxJava
 }
 
-if (project.hasProperty("android")) { // Android libraries
+if (project.hasProperty("android")) { // Android librarie
     task sourcesJar(type: Jar) {
         from android.sourceSets.main.java.srcDirs
         classifier = 'sources'
